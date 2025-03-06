@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift Wish List</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            background-color: #fbece2;
+        }
+        .container {
+            margin: 50px auto;
+            padding: 20px;
+            max-width: 600px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+        }
+        .nav {
+            margin-bottom: 20px;
+        }
+        .nav a {
+            margin: 10px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #333;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            padding: 10px;
+            background: #fff3f3;
+            margin: 5px 0;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .checked {
+            text-decoration: line-through;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Gift Wish List</h1>
+        <div class="nav">
+            <a href="index.html">Home</a>
+        </div>
+        <ul id="gift-list">
+            <li onclick="toggleGift(this)">Anything Miffy</li>
+            <li onclick="toggleGift(this)">Matcha Kit Set (I wanna start making matcha at home)</li>
+            <li onclick="toggleGift(this)">Gold Plated rings (I like chunky ones)</li>
+            <li onclick="toggleGift(this)">Cute room decor</li>
+            <li onclick="toggleGift(this)">Cute baking stuff</li>
+            <li onclick="toggleGift(this)">Vela Jersey (You know I love my velas)</li>
+            <li onclick="toggleGift(this)">Surprise Gift (Sayma can use her December commission and surprise me with a Ferrari)</li>
+            <li onclick="toggleGift(this)">Don't have to actually get me anything. Just make lots of dua and pray I get an internship.</li>
+        </ul>
+    </div>
+    
+    <script>
+        function toggleGift(item) {
+            item.classList.toggle('checked');
+        }
+    </script>
+</body>
+</html>
